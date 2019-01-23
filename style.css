@@ -1,104 +1,108 @@
-.flex-container {
-  display: flex;
-  background-color: #BFBAB1;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 653px;
-}
-.flex-container > div {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
   background-color: white;
-  margin: 5px;
-  padding: 20px;
-  font-size: 15px;
-  width: 700px;
-  height: 350px;
-  border-radius: 15px;
-  background-color: #3C40FF;
+  padding:10px;
+  justify-content: center;
+  grid-template-areas:
+  'myArea'
+  'mySecondarea';
 }
-h1 {
-  text-align: center;
+.grid-item {
+  background-color: #4140FF;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
   font-size: 30px;
   color: white;
   text-shadow: 3px 2px #2C2E2C;
+}
+#item1 {
+  grid-area: myArea;
+  width: 700px;
+  height: 100px;
+  border-radius: 15px 15px 0px 0px;
   font-family: sans-serif;
 }
-h2 {
+#item2 {
+  grid-area: mySecondarea;
+  width: 700px;
+  height: 250px;
+  border-radius: 0px 0px 15px 15px;
+}
+.headOne {
   text-align: center;
-  border-bottom: 2px solid white;
-  font-size: 20px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
-  font-family: sans-serif;
+  font-size: 25px;
 }
-.imgLuca {
-  float: left;
+#imgLuca {
+  width: 125px;
+  height:125px;
+  border: 1px solid black;
   border-radius: 15px;
+  float: left;
+  position: absolute;
+  left: 335px;
+  top: 26px;
 }
 #aboutMe {
   font-size: 20px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
   font-family: monospace;
+  position: absolute;
+  top: 160px;
 }
-#aboutText {
+#aboutInfo {
   font-size: 15px;
   font-family: sans-serif;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
+  position: absolute;
+  top: 200px;
 }
 #LinkedIn {
-  font-size: 19px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
+  font-size: 20px;
   font-family: monospace;
+  position: absolute;
+  top: 300px;
+}
+#Linked {
+  font-size: 16px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 360px;
 }
 a:link, a:visited {
-  background-color: #292CB0;
+  background-color: #0C29A6;
   color: white;
-  padding: 14px 25px;
+  padding: 14px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 8px;
 }
 a:hover, a:active {
-  background-color: #1C1E78;
+  background-color: #081D75;
 }
-  #age {
-    font-size: 20px;
-    color: white;
-    text-shadow: 3px 2px #2C2E2C;
-    font-family: monospace;
-    position: absolute;
-    right: 355px;
-    top: 260px;
-  }
-  #residence {
-    font-size: 20px;
-    color: white;
-    text-shadow: 3px 2px #2C2E2C;
-    font-family: monospace;
-    position: absolute;
-    right: 295px;
-    top: 290px;
-  }
-#phone {
+#age {
   font-size: 20px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
   font-family: monospace;
   position: absolute;
-  right: 303px;
-  top: 350px;
+  right: 360px;
+}
+#residence {
+  font-size: 20px;
+  font-family: monospace;
+  position: absolute;
+  top: 215px;
+  right: 300px;
 }
 #email {
   font-size: 20px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
   font-family: monospace;
   position: absolute;
-  right: 294px;
-  top: 380px;
+  top: 250px;
+  right: 300px;
+}
+#phone {
+  font-size: 20px;
+  font-family: monospace;
+  position: absolute;
+  top: 285px;
+  right: 300px;
 }
