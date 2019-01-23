@@ -1,0 +1,103 @@
+.flex-container {
+  display: flex;
+  background-color: #BFBAB1;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 653px;
+}
+.flex-container > div {
+  background-color: white;
+  margin: 5px;
+  padding: 20px;
+  font-size: 15px;
+  width: 700px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: #3C40FF;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: sans-serif;
+}
+h2 {
+  text-align: center;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: sans-serif;
+}
+.imgLuca {
+  float: left;
+  border-radius: 15px;
+}
+#aboutMe {
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: monospace;
+}
+#aboutText {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+}
+#LinkedIn {
+  font-size: 19px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: monospace;
+}
+a:link, a:visited {
+  background-color: #292CB0;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+}
+a:hover, a:active {
+  background-color: #1C1E78;
+}
+  #age {
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 2px #2C2E2C;
+    font-family: monospace;
+    position: absolute;
+    right: 355px;
+    top: 130px;
+  }
+  #residence {
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 2px #2C2E2C;
+    font-family: monospace;
+    position: absolute;
+    right: 295px;
+    top: 160px;
+  }
+#phone {
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: monospace;
+  position: absolute;
+  right: 303px;
+  top: 220px;
+}
+#email {
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 2px #2C2E2C;
+  font-family: monospace;
+  position: absolute;
+  right: 294px;
+  top: 250px;
+}
