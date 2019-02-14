@@ -1,125 +1,80 @@
-.grid-container {
+body {
+  background-color: steelblue;
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding:10px;
   justify-content: center;
-  grid-template-areas:
-  'myArea'
-  'mySecondarea'
-  'myThirdarea';
 }
-.grid-item {
-  background-color: #7A56FF;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  color: white;
-  text-shadow: 3px 2px #2C2E2C;
-  background-image: url("http://hd-wallpapersfd.info/wp-content/uploads/HTML/Purple-HD-wallpaper/Purple-HD-wallpaper3.jpg");
-  box-shadow: 5px 10px 10px grey;
+header {
+  padding: 10px;
 }
-h1 {
-  position: relative;
+.main {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 700px;
+  display: grid;
+  grid-template-areas: 'panel1 panel2 panel3';
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  float: left;
+  width: 100px;
+  border: 1px solid black;
 }
 h2 {
   position: relative;
-  top: -20px;
+  left: 10px;
+  color: #333;
 }
-#item1 {
-  grid-area: myArea;
-  width: 700px;
-  height: 70px;
-  border-radius: 15px 15px 0px 0px;
-  font-family: sans-serif;
+p {
+  position: relative;
+  width: 300px;
 }
-#item2 {
-  grid-area: mySecondarea;
-  width: 700px;
-  height: 210px;
+.about {
+  position: relative;
+  left: 110px;
+  bottom: 120px;
 }
-#item3 {
-  grid-area: myThirdarea;
-  width: 700px;
-  height: 70px;
-  border-radius: 0px 0px 15px 15px;
-}
-.headOne {
-  text-align: center;
-  font-size: 25px;
-}
-#imgLuca {
-  width: 100px;
-  height:100px;
+.nav {
+  background-color: #333;
   border: 1px solid black;
-  border-radius: 15px;
-  float: left;
-  position: relative;
-  top: -132px;
+  padding: 10px;
+  width: 700px;
 }
-#aboutMe {
-  font-size: 20px;
-  font-family: monospace;
-  position: relative;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-#aboutInfo {
-  font-size: 16px;
-  font-family: sans-serif;
-  position: relative;
-}
-#Linked {
-  font-size: 16px;
-  font-family: sans-serif;
-  position: relative;
-}
-#CV {
-  font-size: 16px;
-  font-family: sans-serif;
-  position: relative;
 
+li {
+  float: left;
+  font-family: 'Noto Sans', sans-serif;
 }
-#github {
-  font-size: 16px;
-  font-family: sans-serif;
-  position: relative;
-}
-a:link, a:visited {
-  background-color: #8900C4;
+
+li a {
+  display: block;
   color: white;
-  padding: 14px 20px;
   text-align: center;
+  padding: 8px 10px;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
 }
-a:hover, a:active {
-  background-color: #690096;
+
+li a:hover {
+  background-color: #111;
 }
-#age {
-  font-size: 20px;
-  font-family: monospace;
+.panel1 {
+  width: 111px;
+  border-right: 1px solid black;
+}
+.panel2 {
+  width: 300px;
   position: relative;
-  top: -210px;
-  left: 550px;
+  left: -10px;
 }
-#residence {
-  font-size: 20px;
-  font-family: monospace;
+.panel3 {
+  width: 230px;
   position: relative;
-  top: -210px;
-  left: 490px;
-}
-#email {
-  font-size: 20px;
-  font-family: monospace;
-  position: relative;
-  top: -220px;
-  left: 495px;
-}
-#phone {
-  font-size: 20px;
-  font-family: monospace;
-  position: relative;
-  top: -230px;
-  left: 499px;
+  left: 20px;
 }
